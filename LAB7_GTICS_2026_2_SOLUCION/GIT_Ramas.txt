@@ -1,0 +1,28 @@
+PASOS PARA SUBIR A GITHUB
+
+1. Descomprimir el ZIP.
+2. Abrir una terminal dentro de la carpeta LAB7_GTICS_2026_2_SOLUCION.
+3. Crear un repositorio VACÍO en GitHub, sin README, sin .gitignore y sin licencia.
+4. Copiar la URL de su repositorio y ejecutar:
+
+   git remote add origin https://github.com/TU_USUARIO/TU_REPOSITORIO.git
+   git push -u origin main
+   git push -u origin develop
+   git push -u origin feature/customer
+   git push -u origin feature/product
+
+5. Verificar en GitHub que existan las cuatro ramas.
+6. Entregar el enlace general del repositorio.
+
+SECUENCIA IMPLEMENTADA
+main (vacía)
+  -> develop
+     -> feature/customer
+        commit: add structure and navigation to the customer flow
+        commit: add customer management
+        -> feature/product
+           commit: add product catalog
+           commit: add order log
+
+Al final:
+feature/product -> merge a develop
